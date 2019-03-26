@@ -1,0 +1,8 @@
+https://docs.microsoft.com/en-us/windows-hardware/design/device-experiences/powercfg-command-line-options
+https://pastebin.com/p5PxW3Pz
+https://devblogs.microsoft.com/scripting/hey-scripting-guy-how-can-i-change-my-desktop-monitor-resolution-via-windows-powershell/
+https://superuser.com/questions/1334781/is-it-possible-to-change-display-scaling-via-command-line/1334841#1334841
+https://stackoverflow.com/questions/35233182/how-can-i-change-windows-10-display-scaling-programmatically-using-c-sharp
+https://superuser.com/questions/1229090/how-to-change-screens-dpi-scaling-automatically-when-switching-to-multi-monitor
+https://devblogs.microsoft.com/scripting/update-or-add-registry-key-value-with-powershell/
+https://www.itprotoday.com/windows-78/how-can-i-tell-which-user-has-which-sid
