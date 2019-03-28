@@ -1,11 +1,11 @@
 #POWERCFG
 
 #Point PowerPlan et boutons d'alimentations
-# 1. Dupliquer le schÈma utiliser et rÈcupÈrer le GUID
-# 2. Ensuite sÈlectionner le nouveau plan
-# 3. Modifier les paramËtres voulues (gr‚ce aux GUID) (comme le temps de mise en veille ou Èteindre l'Ècran, les boutons d'alimentations)
+# 1. Dupliquer le sch√©ma utiliser et r√©cup√©rer le GUID
+# 2. Ensuite s√©lectionner le nouveau plan
+# 3. Modifier les param√®tres voulues (gr√¢ce aux GUID) (comme le temps de mise en veille ou √©teindre l'√©cran, les boutons d'alimentations)
 
-#RÈcupÈration du PowerPlan utilisÈ (MODE WMI)
+#R√©cup√©ration du PowerPlan utilis√© (MODE WMI)
 $plan = Get-WmiObject -Class Win32_PowerPlan -Namespace "root\cimv2\power" -Filter "isActive='true'"
 $regex = [regex]"{(.*?)}$"
 $planGUID = $regex.Match($plan.instanceID.ToString()).Groups[1].Value
