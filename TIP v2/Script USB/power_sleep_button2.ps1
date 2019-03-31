@@ -10,7 +10,8 @@ $plan = Get-WmiObject -Class Win32_PowerPlan -Namespace "root\cimv2\power" -Filt
 $regex = [regex]"{(.*?)}$"
 $planGUID = $regex.Match($plan.instanceID.ToString()).Groups[1].Value
 #Write-Host $planGUID
-$planGUIDNew = powercfg /duplicatescheme $planGUID
+$planGUIDNew = New-Guid
+powercfg /duplicatescheme $planGUID $planGUIDNew
 powercfg /S $planGUIDNew
 powercfg /changename $planGUIDNew "PP4_Suspend_Off"
 # Settings all parameter
